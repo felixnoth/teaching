@@ -1,0 +1,74 @@
+/* ============================================================
+   teaching.css — styles specific to the teaching site,
+   layered on top of the shared style.css.
+   ============================================================ */
+
+/* ---- landing hero ---- */
+.hero.teaching { display: block; padding: 56px 0 28px; }
+.hero.teaching h1 {
+  font-family: "Newsreader", Georgia, serif; font-size: 44px; font-weight: 600;
+  margin: 0 0 8px; letter-spacing: -0.01em;
+}
+.hero.teaching .lede { max-width: 60ch; }
+
+/* ---- course cards (landing) ---- */
+.course-cards { display: grid; gap: 16px; }
+a.course-card {
+  display: block; text-decoration: none; color: inherit;
+  border: 1px solid var(--line); border-left: 3px solid var(--accent);
+  border-radius: 10px; padding: 20px 22px; background: var(--bg);
+  transition: box-shadow .15s ease, transform .15s ease;
+}
+a.course-card:hover {
+  text-decoration: none; box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+  transform: translateY(-1px);
+}
+.course-card h3 {
+  text-transform: none; letter-spacing: 0; color: var(--ink);
+  font-family: "Inter", sans-serif; font-size: 19px; font-weight: 600; margin: 0 0 4px;
+}
+.course-card .meta { color: var(--muted); font-size: 14.5px; margin: 0 0 8px; }
+.course-card .meta .term { color: var(--accent-dark); font-weight: 600; }
+.course-card .blurb { font-size: 15px; margin: 0; color: #33383f; }
+.course-card .go { color: var(--accent); font-weight: 500; font-size: 14.5px; margin: 10px 0 0; }
+
+/* ---- course page ---- */
+.course-hero { padding: 40px 0 8px; }
+.course-hero h1 {
+  font-family: "Newsreader", Georgia, serif; font-size: 38px; font-weight: 600;
+  margin: 0 0 8px; letter-spacing: -0.01em;
+}
+.course-hero .meta-grid {
+  display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 12px 0 0;
+  color: var(--muted); font-size: 14.5px;
+}
+.course-hero .meta-grid b { color: var(--ink); font-weight: 600; }
+
+/* schedule table */
+table.schedule { width: 100%; border-collapse: collapse; font-size: 15px; }
+table.schedule th, table.schedule td {
+  text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+table.schedule th {
+  font-size: 12.5px; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--muted); font-weight: 600;
+}
+table.schedule td.when { white-space: nowrap; color: var(--accent-dark); font-weight: 600; width: 90px; }
+
+/* downloads list */
+ul.downloads { list-style: none; margin: 0; padding: 0; }
+ul.downloads li {
+  display: flex; align-items: baseline; gap: 10px; padding: 8px 0;
+  border-bottom: 1px solid var(--line); font-size: 15px;
+}
+ul.downloads li .kind {
+  flex: 0 0 auto; font-size: 12px; font-weight: 600; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.03em; min-width: 54px;
+}
+.placeholder { color: var(--muted); font-size: 15px; font-style: italic; }
+
+@media (max-width: 680px) {
+  .hero.teaching h1, .course-hero h1 { font-size: 34px; }
+  table.schedule td.when { width: auto; }
+}

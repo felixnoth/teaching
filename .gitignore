@@ -1,0 +1,11 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# never commit node build artifacts if any tooling is run here
+node_modules/
+package.json
+package-lock.json
+
+# internal working notes — keep out of the public repo
+PROJECT-STATUS.md
