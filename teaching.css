@@ -76,6 +76,7 @@ ul.downloads li .kind {
 }
 .notice strong { font-weight: 600; }
 .soon { color: var(--muted); font-size: 15px; }
+.course-ref { color: var(--muted); font-size: 14px; margin-top: 10px; }
 
 @media (max-width: 680px) {
   .hero.teaching h1, .course-hero h1 { font-size: 34px; }
