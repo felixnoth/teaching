@@ -78,6 +78,19 @@ ul.downloads li .kind {
 .soon { color: var(--muted); font-size: 15px; }
 .course-ref { color: var(--muted); font-size: 14px; margin-top: 10px; }
 
+/* sub-headings within a course section (e.g. A1, A2) */
+.subh {
+  font-family: "Inter", sans-serif; font-size: 16px; font-weight: 600;
+  color: var(--ink); text-transform: none; letter-spacing: 0; margin: 20px 0 8px;
+}
+
+/* reference list (hanging indent) */
+.reflist { list-style: none; margin: 6px 0 0; padding: 0; }
+.reflist li {
+  font-size: 14px; color: #33383f; line-height: 1.5;
+  padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 8px;
+}
+
 @media (max-width: 680px) {
   .hero.teaching h1, .course-hero h1 { font-size: 34px; }
   table.schedule td.when { width: auto; }

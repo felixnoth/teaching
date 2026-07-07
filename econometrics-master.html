@@ -38,34 +38,126 @@
       </div>
     </section>
 
-    <section id="info">
-      <p class="notice"><strong>Information and materials coming soon.</strong> This course page is being prepared — the overview, schedule, and materials will be added here.</p>
-    </section>
-
     <section id="overview">
       <h2>Overview</h2>
-      <p class="soon">Coming soon.</p>
+      <p>This is a course about empirical research and micro-econometric methods. It is built
+        from five blocks: lectures, quizzes, additional material, an introduction to the software
+        R, and exercises. Each block is described below.</p>
+      <p>Classic textbooks such as Wooldridge (2003), Greene (2003), and Stock and Watson (2003)
+        cover a wide range of econometrics and the fundamentals of regression theory, and remain
+        useful for checking basic and advanced material. More recently, causal inference and
+        micro-econometric methods have gained momentum, providing a toolbox for analyzing
+        micro-data with an explicit focus on cause and effect — an angle reflected in newer texts
+        by Angrist and Pischke (2008, 2014) and Cunningham (2021).</p>
+      <p>The course follows Huntington-Klein (2021), <em>The Effect</em>, for two reasons. First,
+        it covers what a researcher doing applied empirical work wants in their toolbox: it starts
+        from fundamental elements but also reaches state-of-the-art research methodology for
+        scholars in economics, business, and finance. Second, students do not need to buy it —
+        the chapters are freely available at
+        <a href="https://theeffectbook.net" target="_blank" rel="noopener">theeffectbook.net</a>.</p>
+      <p>The tables below list the lectures with their mandatory chapters, the additional classes,
+        and the five sets of exercises. Exercises are done in R, and I provide solutions in the R
+        scripts. Exact dates and times for each lecture and exercise are on the course e-learning
+        page and in the first section of the lecture slides; all material is available there for
+        download.</p>
     </section>
 
-    <section id="schedule">
-      <h2>Schedule</h2>
-      <p class="soon">Coming soon.</p>
-      <!-- When ready, add a schedule table:
+    <section id="lectures">
+      <h2>Lectures</h2>
       <table class="schedule">
-        <thead><tr><th class="when">Week</th><th>Topic</th></tr></thead>
+        <thead>
+          <tr><th class="when">No.</th><th>Title</th><th>Mandatory chapters from Huntington-Klein (2021)</th></tr>
+        </thead>
         <tbody>
-          <tr><td class="when">1</td><td>Topic</td></tr>
+          <tr><td class="when">L1</td><td>Introduction</td><td>1. Designing Research; 2. Research Questions</td></tr>
+          <tr><td class="when">L2</td><td>Variables and Relationships</td><td>3. Describing Variables; 4. Describing Relationships</td></tr>
+          <tr><td class="when">L3</td><td>Identification</td><td>5. Identification</td></tr>
+          <tr><td class="when">L4</td><td>Causal Diagrams</td><td>6. Causal Diagrams; 7. Drawing Causal Diagrams</td></tr>
+          <tr><td class="when">L5</td><td>Closing Backdoors and Finding Frontdoors</td><td>8. Causal Paths and Closing Backdoors; 9. Finding Frontdoors</td></tr>
+          <tr><td class="when">L6</td><td>Treatment Effects</td><td>10. Treatment Effects; 11. Causality with Less Modeling</td></tr>
+          <tr><td class="when">L7</td><td>Regression</td><td>12. Opening the Toolbox; 13. Regression</td></tr>
+          <tr><td class="when">L8</td><td>Matching and Simulation</td><td>14. Matching; 15. Simulation</td></tr>
+          <tr><td class="when">L9</td><td>Fixed Effects</td><td>16. Fixed Effects</td></tr>
+          <tr><td class="when">L10</td><td>Event Studies</td><td>17. Event Studies</td></tr>
+          <tr><td class="when">L11</td><td>Difference-in-Differences (DID)</td><td>18. Difference-in-Differences</td></tr>
+          <tr><td class="when">L12</td><td>Instrumental Variables (IV)</td><td>19. Instrumental Variables</td></tr>
+          <tr><td class="when">L13</td><td>Regression Discontinuity (RDD)</td><td>20. Regression Discontinuity</td></tr>
+          <tr><td class="when">L14</td><td>Other Methods and Uncertainty</td><td>21. A Gallery of Rogues: Other Methods; 22. Under the Rug</td></tr>
         </tbody>
-      </table> -->
+      </table>
+    </section>
+
+    <section id="additional">
+      <h2>Additional Material</h2>
+      <table class="schedule">
+        <thead>
+          <tr><th class="when">No.</th><th>Title</th><th>Literature</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="when">A1</td><td>Introduction to R</td><td>Alexander (2023), appendix A and B (<a href="https://tellingstorieswithdata.com" target="_blank" rel="noopener">online version</a>)</td></tr>
+          <tr><td class="when">A2</td><td>The Issue of Endogeneity and Causality</td><td>Cunningham (2021), chapters 2.11 ff. and 4 (<a href="https://mixtape.scunning.com" target="_blank" rel="noopener">online version</a>)</td></tr>
+        </tbody>
+      </table>
+
+      <p class="subh">A1: Introduction to R</p>
+      <p>This lecture introduces the software R. Before it, students need to install R and RStudio
+        on their computers to follow along and use R on their own (see Alexander 2023, chapters
+        A.3.1 and A.3.2). The lecture is online only. Afterward, students should be acquainted with
+        R's working environment — this is basic, since all exercises are in R. We work through an
+        R script (Introduction to R) to learn how to process data, plot distributions and
+        relationships, and understand and present distribution moments.</p>
+
+      <p class="subh">A2: The Issue of Endogeneity and Causality</p>
+      <p>This is the only session not based on Huntington-Klein (2021). The slides appear after the
+        lecture on regression, and the content is based on Cunningham (2021), chapters 2.11 ff. and 4.</p>
+    </section>
+
+    <section id="exercises">
+      <h2>Exercises</h2>
+      <p>There are five sessions with exercises, posed as open questions on a specific topic.
+        Students find the exercises and their solutions in an R script (Exercises) in the download
+        area on the e-learning page. The exercises are done in R.</p>
+      <table class="schedule">
+        <thead>
+          <tr><th class="when">No.</th><th>Title</th><th>Chapters from Huntington-Klein (2021)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="when">E1</td><td>Regression</td><td>12. Opening the Toolbox; 13. Regression</td></tr>
+          <tr><td class="when">E2</td><td>Fixed Effects</td><td>16. Fixed Effects</td></tr>
+          <tr><td class="when">E3</td><td>DID</td><td>18. Difference-in-Differences</td></tr>
+          <tr><td class="when">E4</td><td>IV</td><td>19. Instrumental Variables</td></tr>
+          <tr><td class="when">E5</td><td>RDD</td><td>20. Regression Discontinuity</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="quizzes">
+      <h2>Quizzes</h2>
+      <p>Each lecture is accompanied by a set of quizzes. Their purpose is to let students check
+        their understanding of the content provided by each lecture and the reading material. The
+        quizzes are available on the e-learning platform.</p>
     </section>
 
     <section id="materials">
       <h2>Materials</h2>
-      <p class="soon">Coming soon.</p>
-      <!-- When ready, put files in materials/ and list them:
-      <ul class="downloads">
-        <li><span class="kind">PDF</span><a href="materials/econometrics-master-syllabus.pdf">Syllabus</a></li>
-      </ul> -->
+      <p>Lecture slides, the R scripts (Introduction to R; Exercises), quizzes, and all course
+        material are available for download on the course e-learning page. The course textbook is
+        freely available online:
+        <a href="https://theeffectbook.net" target="_blank" rel="noopener">The Effect</a>.</p>
+    </section>
+
+    <section id="references">
+      <h2>References</h2>
+      <ul class="reflist">
+        <li>Huntington-Klein, N. (2021). <em>The Effect: An Introduction to Research Design and Causality.</em> CRC Press. <a href="https://theeffectbook.net" target="_blank" rel="noopener">theeffectbook.net</a></li>
+        <li>Cunningham, S. (2021). <em>Causal Inference: The Mixtape.</em> Yale University Press. <a href="https://mixtape.scunning.com" target="_blank" rel="noopener">mixtape.scunning.com</a></li>
+        <li>Alexander, R. (2023). <em>Telling Stories with Data: With Applications in R.</em> Chapman and Hall/CRC. <a href="https://tellingstorieswithdata.com" target="_blank" rel="noopener">tellingstorieswithdata.com</a></li>
+        <li>Angrist, J. D., &amp; Pischke, J.-S. (2008). <em>Mostly Harmless Econometrics: An Empiricist's Companion.</em> Princeton University Press.</li>
+        <li>Angrist, J. D., &amp; Pischke, J.-S. (2014). <em>Mastering 'Metrics: The Path from Cause to Effect.</em> Princeton University Press.</li>
+        <li>Wooldridge, J. M. (2003). <em>Introductory Econometrics: A Modern Approach.</em> Cengage Learning.</li>
+        <li>Greene, W. H. (2003). <em>Econometric Analysis.</em> Pearson Education.</li>
+        <li>Stock, J. H., &amp; Watson, M. W. (2003). <em>Introduction to Econometrics.</em> Addison Wesley.</li>
+      </ul>
     </section>
 
   </main>
