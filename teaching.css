@@ -95,3 +95,12 @@ ul.downloads li .kind {
   .hero.teaching h1, .course-hero h1 { font-size: 34px; }
   table.schedule td.when { width: auto; }
 }
+
+/* ---- interactive apps page ---- */
+.app-embed {
+  border: 1px solid var(--line); border-left: 3px solid var(--accent);
+  border-radius: 10px; overflow: hidden; background: #fff; margin: 10px 0 14px;
+}
+.app-embed iframe { display: block; width: 100%; height: 760px; border: 0; }
+.app-links { display: flex; gap: 12px; flex-wrap: wrap; margin: 0 0 4px; }
+@media (max-width: 680px) { .app-embed iframe { height: 560px; } }
